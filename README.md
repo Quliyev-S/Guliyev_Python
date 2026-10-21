@@ -1,27 +1,27 @@
 # QA Automation Traineeship Test Task (Python)
 
-Проект выполнен в рамках тестового задания на стажировку QA Automation.
+This project was completed as part of a test task for the QA Automation traineeship.
 
-## Ответы на вопросы (Задание 2)
+## Answers to Questions (Task 2)
 
-**Дана скобочная последовательность:** `[(((())()(()]]`
+**Given bracket sequence:** `[(((())()(()]]`
 
-1. **Можно ли считать эту последовательность правильной?**
-   * **Ответ:** Нет, данную последовательность нельзя считать правильной.
-   * **Причина:** Нарушена правильность скобочной структуры. В начале используется открывающая квадратная скобка `[`, а в конце — две закрывающие квадратные скобки `]]` при отсутствии второй открывающей. Кроме того, нарушен баланс и парность внутренних круглых скобок.
+1. **Can this sequence be considered valid?**
+   * **Answer:** No, this sequence cannot be considered valid.
+   * **Reason:** The validity of the bracket structure is violated. It starts with an opening square bracket `[`, but ends with two closing square brackets `]]` without a second opening bracket. In addition, the balance and pairing of the inner round parentheses are violated.
 
-2. **Что нужно изменить в последовательности, чтобы она стала правильной?**
-   * **Ответ:** Чтобы последовательность стала правильной, необходимо сбалансировать открывающие и закрывающие скобки одного типа.
-   * **Варианты исправления:**
-     1. Если привести всю последовательность к правильному виду круглых скобок: `((((())()(()))))`
-     2. Если сохранить внешние квадратные скобки и сбалансировать внутренние круглые скобки: `[((())()(()))]`
+2. **What needs to be changed in the sequence to make it valid?**
+   * **Answer:** To make the sequence valid, you need to balance the opening and closing brackets of the same type.
+   * **Fix options:**
+     1. If converting the entire sequence to a valid form using round parentheses: `((((())()(()))))`
+     2. If keeping the outer square brackets and balancing the inner round parentheses: `[((())()(()))]`
 
 ---
 
-## Запуск программы
+## Running the Program
 
-Для запуска скрипта требуется Python 3.x.
+Python 3.x is required to run the script.
 
-Команда для запуска:
+Command to run:
 ```bash
 python main.py
