@@ -1,16 +1,16 @@
 def check_number():
-    """1. Если введенное число больше 7, то вывести 'Hello'."""
+    """1. If the entered number is greater than 7, print 'Hello'."""
     try:
-        num = float(input("Введите число: "))
+        num = float(input("Enter a number: "))
         if num > 7:
             print("Hello")
     except ValueError:
-        print("Ошибка: Пожалуйста, введите корректное число.")
+        print("Error: Please enter a valid number.")
 
 
 def check_name():
-    """2. Если введенное имя совпадает с 'John', то вывести 'Hello, John', иначе — 'There is no such name'."""
-    name = input("Введите имя: ").strip()
+    """2. If the entered name matches 'John', print 'Hello, John', otherwise print 'There is no such name'."""
+    name = input("Enter a name: ").strip()
     if name == "John":
         print("Hello, John")
     else:
@@ -18,26 +18,26 @@ def check_name():
 
 
 def check_array_multiples_of_three():
-    """3. На входе числовой массив, необходимо вывести элементы массива, кратные 3."""
-    user_input = input("Введите числа массива через пробел: ").strip()
+    """3. Given a numeric array, output the elements that are multiples of 3."""
+    user_input = input("Enter array numbers separated by spaces: ").strip()
     if not user_input:
-        print("Массив пуст.")
+        print("The array is empty.")
         return
 
     try:
         array = [int(x) for x in user_input.split()]
         multiples_of_three = [num for num in array if num % 3 == 0]
-        print("Элементы массива, кратные 3:", multiples_of_three)
+        print("Elements that are multiples of 3:", multiples_of_three)
     except ValueError:
-        print("Ошибка: Вводимые элементы массива должны быть целыми числами.")
+        print("Error: Array elements must be integers.")
 
 
 def main():
-    print("=== ЗАДАНИЕ 1: Проверка числа ===")
+    print("=== TASK 1: Number Check ===")
     check_number()
-    print("\n=== ЗАДАНИЕ 2: Проверка имени ===")
+    print("\n=== TASK 2: Name Check ===")
     check_name()
-    print("\n=== ЗАДАНИЕ 3: Фильтрация массива ===")
+    print("\n=== TASK 3: Array Filtering ===")
     check_array_multiples_of_three()
 
 
